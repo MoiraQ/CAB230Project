@@ -1,0 +1,114 @@
+/*
+ * Comments YAY
+ *
+ */
+
+body {
+ background-color: #ada397;
+ font-family: Segoe UI, Helvetica, sans-serif ;
+ min-width: 600px;
+} 
+
+#image {
+	background-image: url('images/sunset.jpg');
+	position: absolute;
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+} 
+
+div.sidebox {
+ border-style: solid;
+ border-width: 4px;
+ border-color: #white;
+ width: 160px;
+ margin: 10px;
+ background: white;
+} 
+
+div.sidebox h1 {
+ background-color: #003399;
+ font-size: 15pt;
+ color: white;
+ margin: 0px;
+text-align: center;
+} 
+
+div.sidebox p {
+ margin: 10px;
+} 
+
+#header {
+ height: 80px;
+ text-align: center;
+ background-color: #ada397;
+ color: white;
+}
+#header h1 {
+ margin: 0px;
+ padding: 10px;
+}
+#content {
+ position:relative;
+ padding: 10px;
+ margin-top: 5px;
+ margin-left: 5px;
+ border:1px solid black;
+ background-color: white;
+}
+#menu {
+ background-color: #ada397; 
+ padding-bottom: 15px;
+}
+
+#menu a {
+ height: 40px;
+ padding-top: 10px;
+ padding-left: 15px;
+ padding-right: 15px;
+ padding-bottom: 10px;
+ text-align: center;
+ font-size:12pt;
+ font-weight: bold;
+ background-color: #ada397;
+ color: white;
+ text-decoration: none;
+}
+#menu a:hover {
+ background-color: white;
+ color:black;
+ text-decoration: underline;
+} 
+
+
+#sidebar {
+ margin: 5px;
+ border: 1px dashed black;
+ background-color: #CCCCFF;
+ float: right;
+ width: 180px;
+}
+#footer {
+ position:absolute;
+ bottom:5px;
+ margin: 5px;
+ border: 1px dashed black;
+ background-color: #white;
+ text-align: center;
+ clear: both;
+ height: 50px;
+} 
+
+#wrapper {
+ width: 800px;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: left;
+} 
+
+body {
+ text-align: center;
+}
+#wrapper {
+ text-align: left;
+} 
