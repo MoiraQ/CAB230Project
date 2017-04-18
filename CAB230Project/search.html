@@ -3,10 +3,11 @@
 <head>
 	
 	<link href="mystyle.css" rel="stylesheet" type="text/css"/> 
+	<script type="text/javascript" src="javascript.js"></script>
 	
 
 	<title>Project - Review Website</title>
-	<!-- NAME && STUDENT NUMBERS -->
+	<!-- Moira Quinn & Mckenna -->
  <body>
   
 
@@ -15,31 +16,60 @@
 	 </div>
 	 
 	 <div id=menu>
-	 <a href="">Search</a><a href="">See All</a><a href="">Sign Up</a> 
+	 <a href="search.html">Search</a><a href="resultspage.html">See All</a><a href="userregpage.html">Sign Up</a> 
 	 </div>
 	 
-	 <div id=image>
-		<!-- <img src="images/sunset.jpg"></img> -->
-	 </div>
-	 
-	 <div id="wrapper">
-	 
-	 
-	 
-	 <div id=content>
-		 <form>
-		 <input type="text" name="search" placeholder="Search">
-		 <select name="Suburbs" size="1">
-		 <option value="Options">Options</option>
-		 </select>
+	 <div id=image-container>
+	  <div id=form-container>
+	  <h2>Search for Parks</h2>
+		 <form action="resultspage.html">
+			<input type="text" name="search" placeholder="Keyword">
+			<br>
+			<br>
+			<hr>
+			Or search by:<br>
+			<br>
+			Suburb:
+			<select name="Suburbs" size="1">
+				 
+					<option value="Options">Options</option>
+					<option value="Options">Windsor</option>
+					<option value="Options">Bowen Hills</option>
+					<option value="Options">New Farm</option>
+					<option value="Options">Spring Hill</option>
+				</select>
+			<br>
+			<br>
+			OR
+			<br>
+			<br>
+				<button onclick="getLocation()">Get Location Automatically</button>
+		 <br>
+		 <br>
+		 <hr />
+		 Or search by:<br>
+		 <br>
+		 Rating: <br>
+		 1 <input type="checkbox" name="one" value="yes"> <br>
+		 2 <input type="checkbox" name="two" value="yes"> <br>
+		 3 <input type="checkbox" name="three" value="yes"> <br>
+		 4 <input type="checkbox" name="four" value="yes"> <br>
+		 5 <input type="checkbox" name="five" value="yes"> <br>
+		 
+		 <br>
+		 <br>
+		 
+		 <input type="submit" value="Search">
 		 </form>
+		 
+	 </div>
 	 </div>
 	 
 	 <div id=footer>
-		<h3> footers with things in them</h3>
+		<p>Copyright text</p>
+		<p> Privacy Policy || Terms and Conditions </p>
 	 </div>
 	 
-	</div>
 	
  </body> 
  

@@ -3,10 +3,11 @@
 <head>
 	
 	<link href="mystyle.css" rel="stylesheet" type="text/css"/> 
+	<script type="text/javascript" src="javascript.js"></script>
 	
 
 	<title>Project - Review Website</title>
-	<!-- NAME && STUDENT NUMBERS -->
+	<!-- Moira Quinn & McKenna Buckley -->
  <body>
   
 
@@ -15,39 +16,53 @@
 	 </div>
 	 
 	 <div id=menu>
-	 <a href="">Search</a><a href="">See All</a><a href="">Sign Up</a> 
+	 <a href="search.html">Search</a><a href="resultspage.html">See All</a><a href="userregpage.html">Sign Up</a> 
 	 </div>
 	 
-	 <div id=image>
-		<!-- <img src="images/sunset.jpg"></img> -->
-	 </div>
-	 
-	 <div id="wrapper">
-	 
-	 
-	 
-	 <div id=content>
-		 <form>
-		 <input type="text" name="username" placeholder="Username">
-		 <input type="text" name="password" placeholder="Password">
-		 <br />
-		 <input type="text" name="firstName" placeholder="First Name">
-		 <input type="text" name="lastName" placeholder="Last Name">
-		 <br />
-		 <input type="text" name="email" placeholder="Email Address">
-		 <select name="Gender" size="1">
-		 <option value="Female">Female</option>
-		 <option value="Male">Male</option>
-		 <option value="Other">Other</option>
+	 <div id=image-container>
+		<div id=form-container>
+		
+			<h2>Create an Account</h2>
+		
+		 <form style="text-align:right !important" onsubmit="return validate()">
+		 
+		 Username: <input id="username" type="text" name="username">
+		 
+		 <span id="usernameMissing" class="error-message"> Field Required</span><br><br>
+		 
+		 Password: <input type="password" name="password" id="password"> 
+		 <span id="passwordMissing" class="error-message"> Field Required</span><br>
+		 <br>
+		 Confirm Password: <input type="password" name="confirmPassword" id="confirmPassword">
+		 <span id="cPasswordMissing" class="error-message"> Field Required</span><br>
+		 <span id="passwordDifferent" class="error-message">Passwords don't match</span><br>
+		 First Name: <input id="fName" type="text" name="firstName"> 
+		 <span id="fNameMissing" class="error-message"> Field Required</span><br><br>
+		 <p>Last Name: <input id="lName" type="text" name="lastName"> 
+		 <span id="lNameMissing" class="error-message"> Field Required</span><br><br>
+		 Email Address: <input id="email" type="email" name="email"> 
+		 <span id="emailMissing" class="error-message"> Field Required</span><br><br>
+		 Gender:   <select id="gender" name="Gender" size="1">
+			<option value="genderPlaceholder">Gender</option>
+			<option value="Female">Female</option>
+			<option value="Male">Male</option>
+			<option value="Other">Other</option>
 		 </select>
+		 <span id="genderMissing" class="error-message"> Field Required</span><br><br>
+		 <input type="submit" value="Sign up!">
+		 <br>
 		 </form>
 	 </div>
-	 
-	 <div id=footer>
-		<h3> footers with things in them</h3>
 	 </div>
 	 
-	</div>
+	 
+	 
+	 
+	 
+	 <div id=footer>
+		<p>Copyright text</p>
+		<p> Privacy Policy || Terms and Conditions </p>
+	 </div>
 	
  </body> 
  
