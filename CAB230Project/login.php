@@ -25,15 +25,16 @@
 			
 			<form style="text-align:right !important" onsubmit="return validate()">
 				
-				Username: <input id="username" type="text" name="username"> 
-				<br>
-				<span id="usernameMissing" class="error-message"> Field Required</span>
+				Username: 
+				<input name="username" id="username" type="text" > 
+				<span class="error-message" id="usernameMissing" style= "visibility: visible;"> Field Required</span>
 				<br>
 				<br>
 				
-				Password: <input type="password" name="password" id="password"> 
+				Password: 
+				<input name="password" id="password" type="password" > </input>
+				<span class="error-message" id="passwordMissing" style= "visibility: visible;"> Field Required</span>
 				<br>
-				<span id="passwordMissing" class="error-message"> Field Required</span>
 				<br>
 				
 				<input type="submit" value="Login">
@@ -47,8 +48,7 @@
 		<p>Copyright text</p>
 		<p> Privacy Policy || Terms and Conditions </p>
 	</div>
-?>
-		
+?>	
 	</body>
 	
 </html>
